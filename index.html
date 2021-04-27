@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Run bash files - documentation</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+    <div class="container border border-primary mt-3 text-dark">
+        <h1 class="text-center">Run bash files - documentation</h1>
+    </div>
+
+    <div class="container mt-4">
+        <h3 class="container text-center text-dark">Information</h3>
+        <p class="text-center">Name: Run bash files</p>
+        <p class="text-center">Purpose: Run all sh files found at path</p>
+        <p class="text-center">If only specific files are required to run, check -r flag</p>
+    </div>
+
+    <div class="container mt-4">
+        <h3 class="container text-center text-dark">Synopsis</h3>
+        <table class="table table-hover text-center table-bordered">
+            <caption>Synopsis</caption>
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">Usage</th>
+                    <th scope="col">Results</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">bash script.sh OR bash script.sh -h</th>
+                    <td>Prints help</td>
+                </tr>
+                <tr>
+                    <th scope="row">bash script.sh [path] {flags}</th>
+                    <td>Run sh files found at [path] with {flags}. Not valid for -h or -f flags</td>
+                </tr>
+                <tr>
+                    <th scope="row">chmod +x script.sh => ./script.sh [path] {flags}</th>
+                    <td>Same as above</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="container text-center mt-4">
+        <h3 class="container text-center text-dark">Flags</h3>
+        <table class="table table-hover">
+            <caption>Flags</caption>
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">Flag ID</th>
+                    <th scope="col">Flag symbol</th>
+                    <th scope="col">Meaning</th>
+                    <th scope="col">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>-h</td>
+                    <td>Help</td>
+                    <td>Print help</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">2</th>
+                    <td>-r [regex]</td>
+                    <td>Regex</td>
+                    <td>Run only files whose name matches with [regex]</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">3</th>
+                    <td>-R</td>
+                    <td>Recursive mode</td>
+                    <td>Enable recursive mode</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">4</th>
+                    <td>-q</td>
+                    <td>Quiet mode</td>
+                    <td>Redirects file output to /dev/null</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">5</th>
+                    <td>-p</td>
+                    <td>Print</td>
+                    <td>Before running a file, print path and filename</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">6</th>
+                    <td>-f</td>
+                    <td>Print without running the file</td>
+                    <td>Print path and filename without running the file</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">7</th>
+                    <td>-s</td>
+                    <td>Statistics</td>
+                    <td>Print statistics</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">8</th>
+                    <td>-e</td>
+                    <td>Error</td>
+                    <td>Print errors when running files</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+</body>
+
+</html>
