@@ -6,14 +6,14 @@ Run all sh files found at specific path.
 # How to use
 Run
 ```
-bash script.sh [path] {flags}
+bash script.sh {flags} [path]
 ```
 
 or
 
 ```
 chmod +x script.sh
-./script.sh [path] {flags}
+./script.sh {flags} [path]
 ```
 
 # Documentation
@@ -28,5 +28,5 @@ or
 bash script.sh -h
 ```
 
-Documentation can also be found at ./index.html\
+Documentation can also be found in ***index.html***\
 Documentation includes description, detailed usage and info about flags.
