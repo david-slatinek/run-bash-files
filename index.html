@@ -4,8 +4,8 @@
 <head>
     <title>Run bash files - documentation</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
@@ -38,11 +38,11 @@
                     <td>Prints help</td>
                 </tr>
                 <tr>
-                    <th scope="row">bash script.sh [path] {flags}</th>
+                    <th scope="row">bash script.sh {flags} [path]</th>
                     <td>Run sh files found at [path] with {flags}. Not valid for -h or -f flags</td>
                 </tr>
                 <tr>
-                    <th scope="row">chmod +x script.sh => ./script.sh [path] {flags}</th>
+                    <th scope="row">chmod +x script.sh => ./script.sh {flags} [path]</th>
                     <td>Same as above</td>
                 </tr>
             </tbody>
@@ -94,7 +94,7 @@
                     <th scope="row">5</th>
                     <td>-p</td>
                     <td>Print</td>
-                    <td>Before running a file, print path and filename</td>
+                    <td>Print path and filename before running the file</td>
                 </tr>
 
                 <tr>
