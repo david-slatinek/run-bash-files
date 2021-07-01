@@ -41,22 +41,19 @@ run() {
 	path=$1
 
 	# -r flag => regex
+	# All .sh files
+	regex=".*/*.sh"
 	if [[ $2 = true ]]; then
 		# Custom regex
 		regex=".*/$3"
-	else
-		# All .sh files
-		regex=".*/*.sh"
 	fi
 
 	# -R flag => recursive
 	# Finds all files in a specified directory
+	files=$(find "$path" -maxdepth 1 -type f -regex "$regex")
 	if [[ $4 = true ]]; then
 		# Recursive mode
 		files=$(find "$path" -type f -regex "$regex")
-	else
-		# Only specified directory
-		files=$(find "$path" -maxdepth 1 -type f -regex "$regex")
 	fi
 
 	# -f flag => print path and filename without running the file
