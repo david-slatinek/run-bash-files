@@ -5,26 +5,26 @@ Run all sh files found at specific path.
 
 # How to use
 Run
-```
+```bash
 bash script.sh {flags} [path]
 ```
 
 or
 
-```
+```bash
 chmod +x script.sh
 ./script.sh {flags} [path]
 ```
 
 # Documentation
 Description can be displayed by running:
-```
+```bash
 bash script.sh
 ```
 
 or
 
-```
+```bash
 bash script.sh -h
 ```
 
